@@ -164,23 +164,25 @@ $pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , '                            
 
 
 $pdf->setXY($abs_x , $y_absolute +  ($r*33)  );
-$pdf->SetFont('angsana','I',15);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                       '.'ใบเสร็จอิเล็กทรอนิกส์ฉบับนี้สามารถนำไปเบิกจ่ายค่าลงทะเบียนจากต้นสังกัดคืนได้'  ));
+$pdf->SetFont('angsana','',14);
+$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                '.'ใบเสร็จอิเล็กทรอนิกส์ฉบับนี้สามารถนำไปเบิกจ่ายค่าลงทะเบียนจากต้นสังกัดคืนได้'  ));
 
 $pdf->setXY($abs_x , $y_absolute +  ($r*34)  );
 $pdf->SetFont('angsana','I',15);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                                     '.'in Association with "Tawanchai Project" (Tawanchai Cleft Center) '  ));
+$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'           '.' 8th Annual Meeting of the Thai Cleft Lip-Palate and Craniofacial Association: Internation Congress '  ));
 
 
 
 $pdf->setXY($abs_x , $y_absolute +  ($r*35)  );
 $pdf->SetFont('angsana','I',15);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                                                             '.'http://www.tawanchai-foundation.org/'  ));
+$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                        '.'http://www.thaicleft2015.org'  ));
 
+
+/*
 $pdf->setXY($abs_x , $y_absolute +  ($r*36)  );
 $pdf->SetFont('angsana','I',15);
 $pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , '                                                        '.'Registration date : '.$today  ));
-
+*/
 
 
 
