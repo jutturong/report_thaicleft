@@ -164,18 +164,20 @@ $pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , '                            
 
 
 $pdf->setXY($abs_x , $y_absolute +  ($r*33)  );
+$pdf->SetTextColor(0,0,255);
 $pdf->SetFont('angsana','',14);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                '.'ใบเสร็จอิเล็กทรอนิกส์ฉบับนี้สามารถนำไปเบิกจ่ายค่าลงทะเบียนจากต้นสังกัดคืนได้'  ));
+$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                      '.'ใบเสร็จอิเล็กทรอนิกส์ฉบับนี้สามารถนำไปเบิกจ่ายค่าลงทะเบียนจากต้นสังกัดคืนได้'  ));
 
+$pdf->SetTextColor(0);
 $pdf->setXY($abs_x , $y_absolute +  ($r*34)  );
-$pdf->SetFont('angsana','I',15);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'           '.' 8th Annual Meeting of the Thai Cleft Lip-Palate and Craniofacial Association: Internation Congress '  ));
+$pdf->SetFont('angsana','',13);
+$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'              '.' 8th Annual Meeting of the Thai Cleft Lip-Palate and Craniofacial Association: Internation Congress '  ));
 
 
 
 $pdf->setXY($abs_x , $y_absolute +  ($r*35)  );
-$pdf->SetFont('angsana','I',15);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                        '.'http://www.thaicleft2015.org'  ));
+$pdf->SetFont('angsana','',13);
+$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                                                              '.'http://www.thaicleft2015.org'  ));
 
 
 /*
