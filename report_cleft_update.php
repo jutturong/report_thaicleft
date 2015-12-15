@@ -183,7 +183,7 @@ $pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                             
 
 ////Put watermark
 $pdf->SetFont('angsana','B',60);
-$pdf->SetTextColor(255, 192, 203);
+$pdf->SetTextColor(211, 211, 211);  //red,green,blue   211,211,211  gray color
 $pdf->Rotate(30, 150, 150);  //angle
 $pdf->Text(99, 125, 'THAICleft 2015' ); // x,y
 
