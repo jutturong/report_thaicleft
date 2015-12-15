@@ -138,6 +138,9 @@ $pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'            '.'President of T
 
 
 
+
+/*
+
 $pdf->setXY($abs_x , $y_absolute +  ($r*33)  );
 $pdf->SetFont('angsana','I',15);
 $pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                       '.'Center of Cleft Lip - Cleft Palate and Craniofacial Deformities ,Khon Kaen University '  ));
@@ -146,16 +149,7 @@ $pdf->setXY($abs_x , $y_absolute +  ($r*34)  );
 $pdf->SetFont('angsana','I',15);
 $pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                                     '.'in Association with "Tawanchai Project" (Tawanchai Cleft Center) '  ));
 
-/*
-$pdf->setXY($abs_x , $y_absolute +  ($r*33)  );
-$pdf->SetFont('angsana','I',15);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                                     '.'Faculty of Medicine, Khon Kaen University , 123 Mittraphap Highway '  ));
 
-$pdf->setXY($abs_x , $y_absolute +  ($r*34)  );
-$pdf->SetFont('angsana','I',15);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                                                          '.'Muang District, Khon Kaen, Thailand 40002, '  ));
- * 
- */
 
 $pdf->setXY($abs_x , $y_absolute +  ($r*35)  );
 $pdf->SetFont('angsana','I',15);
@@ -165,66 +159,30 @@ $pdf->setXY($abs_x , $y_absolute +  ($r*36)  );
 $pdf->SetFont('angsana','I',15);
 $pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , '                                                        '.'Registration date : '.$today  ));
 
-/*
-$pdf->setXY($abs_x , $y_absolute +  ($r*22)  );
-$pdf->SetFont('angsana','',14);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'Please pay to : '.'  Siam Commercial Bank account Number :  '.' THAI CLEFT 2015  ' ));
-
-
-$pdf->setXY($abs_x , $y_absolute +  ($r*23)  );
-$pdf->SetFont('angsana','',14);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'SWIFTCODE for international transfer : '.'  SICOTHBK (www.scb.co.th)  ' ));
-
-
-$pdf->setXY($abs_x , $y_absolute +  ($r*24)  );
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'ACCOUNT NUMBER : '.' 551-436324-1  ' ));
-
-
-$pdf->setXY($abs_x , $y_absolute +  ($r*25)  );
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'SAVINGS : '.' ACCOUNT  ' ));
-
-
-$pdf->setXY($abs_x , $y_absolute +  ($r*26)  );
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'THE SIAM COMMERCIAL BANK PCL ' ));
- 
- 
-$pdf->setXY($abs_x , $y_absolute +  ($r*27)  );
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'KHONKAEN UNIVERSITY BRANCH ' ));
-
-
- 
-$pdf->setXY($abs_x , $y_absolute +  ($r*28)  );
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , '123/900 MITTRAPARB RD. ' ));
-  
-  
-$pdf->setXY($abs_x , $y_absolute +  ($r*29)  );
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'A.MUANG, KHONKAEN 40002 ' ));
-   
-
-$pdf->setXY($abs_x , $y_absolute +  ($r*30)  );
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'THAILAND ' ));
-
-  
-$pdf->setXY($abs_x , $y_absolute +  ($r*31)  );
-$pdf->SetFont('angsana','',14);
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'ชื่อบัญชี : THAI CLEFT 2015 ' ));
-
-
-$pdf->setXY($abs_x , $y_absolute +  ($r*32)  );
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'เลขที่บัญชี : 551 – 436324 – 1 ' ));
-
-
-$pdf->setXY($abs_x , $y_absolute +  ($r*33)  );
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'บัญชีเงินฝาก : ออมทรัพย์ ' ));
-
-
-$pdf->setXY( $abs_x , $y_absolute +  ($r*34)  );
-$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , 'ธนาคารไทยพาณิชย์  สาขามหาวิทยาลัยขอนแก่น ' ));
 */
 
 
-#$pdf->footer_(25,272,' I-San register and information system for cleft problems');
-#$pdf->footer_(10,272,' Center of Cleft Lip - Cleft Palate and Craniofacial Deformities ,Khon Kaen University in Association');
+
+$pdf->setXY($abs_x , $y_absolute +  ($r*33)  );
+$pdf->SetFont('angsana','I',15);
+$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                       '.'ใบเสร็จอิเล็กทรอนิกส์ฉบับนี้สามารถนำไปเบิกจ่ายค่าลงทะเบียนจากต้นสังกัดคืนได้'  ));
+
+$pdf->setXY($abs_x , $y_absolute +  ($r*34)  );
+$pdf->SetFont('angsana','I',15);
+$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                                     '.'in Association with "Tawanchai Project" (Tawanchai Cleft Center) '  ));
+
+
+
+$pdf->setXY($abs_x , $y_absolute +  ($r*35)  );
+$pdf->SetFont('angsana','I',15);
+$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                                                             '.'http://www.tawanchai-foundation.org/'  ));
+
+$pdf->setXY($abs_x , $y_absolute +  ($r*36)  );
+$pdf->SetFont('angsana','I',15);
+$pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , '                                                        '.'Registration date : '.$today  ));
+
+
+
 
 $pdf->Output();
      
