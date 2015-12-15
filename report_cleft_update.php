@@ -164,7 +164,7 @@ $pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' , '                            
 
 
 $pdf->setXY($abs_x , $y_absolute +  ($r*33)  );
-$pdf->SetTextColor(0,0,255);
+$pdf->SetTextColor(0,0,255); #blue color
 $pdf->SetFont('angsana','',14);
 $pdf->MultiCell( 0  , 0 , iconv( 'UTF-8','cp874' ,'                      '.'ใบเสร็จอิเล็กทรอนิกส์ฉบับนี้สามารถนำไปเบิกจ่ายค่าลงทะเบียนจากต้นสังกัดคืนได้'  ));
 
